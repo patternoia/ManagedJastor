@@ -24,6 +24,18 @@
 		931EF51D1666B6EB00D11B32 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931EF4FC1666B6EB00D11B32 /* CoreData.framework */; };
 		931EF5251666B6EB00D11B32 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 931EF5231666B6EB00D11B32 /* InfoPlist.strings */; };
 		931EF5281666B6EB00D11B32 /* ManagedJastorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 931EF5271666B6EB00D11B32 /* ManagedJastorTests.m */; };
+		931EF5481666B91500D11B32 /* ManagedJastor.m in Sources */ = {isa = PBXBuildFile; fileRef = 931EF5451666B91500D11B32 /* ManagedJastor.m */; };
+		931EF5491666B91500D11B32 /* ManagedJastor.m in Sources */ = {isa = PBXBuildFile; fileRef = 931EF5451666B91500D11B32 /* ManagedJastor.m */; };
+		931EF54A1666B91500D11B32 /* ManagedJastorRuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 931EF5471666B91500D11B32 /* ManagedJastorRuntimeHelper.m */; };
+		931EF54B1666B91500D11B32 /* ManagedJastorRuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 931EF5471666B91500D11B32 /* ManagedJastorRuntimeHelper.m */; };
+		931EF54E1666BB7A00D11B32 /* ProductCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 931EF54D1666BB7A00D11B32 /* ProductCategory.m */; };
+		931EF54F1666BB7A00D11B32 /* ProductCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 931EF54D1666BB7A00D11B32 /* ProductCategory.m */; };
+		931EF5521666BBAB00D11B32 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 931EF5511666BBAB00D11B32 /* Product.m */; };
+		931EF5531666BBAB00D11B32 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 931EF5511666BBAB00D11B32 /* Product.m */; };
+		931EF5551666C02100D11B32 /* Product.json in Resources */ = {isa = PBXBuildFile; fileRef = 931EF5541666C02100D11B32 /* Product.json */; };
+		931EF5561666C02100D11B32 /* Product.json in Resources */ = {isa = PBXBuildFile; fileRef = 931EF5541666C02100D11B32 /* Product.json */; };
+		931EF5581666C16B00D11B32 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 931EF5571666C16B00D11B32 /* README.md */; };
+		931EF5591666C16B00D11B32 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 931EF5571666C16B00D11B32 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +70,16 @@
 		931EF5241666B6EB00D11B32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		931EF5261666B6EB00D11B32 /* ManagedJastorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagedJastorTests.h; sourceTree = "<group>"; };
 		931EF5271666B6EB00D11B32 /* ManagedJastorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagedJastorTests.m; sourceTree = "<group>"; };
+		931EF5441666B91500D11B32 /* ManagedJastor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagedJastor.h; sourceTree = "<group>"; };
+		931EF5451666B91500D11B32 /* ManagedJastor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedJastor.m; sourceTree = "<group>"; };
+		931EF5461666B91500D11B32 /* ManagedJastorRuntimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagedJastorRuntimeHelper.h; sourceTree = "<group>"; };
+		931EF5471666B91500D11B32 /* ManagedJastorRuntimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedJastorRuntimeHelper.m; sourceTree = "<group>"; };
+		931EF54C1666BB7A00D11B32 /* ProductCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductCategory.h; path = ManagedJastor/Model/ProductCategory.h; sourceTree = "<group>"; };
+		931EF54D1666BB7A00D11B32 /* ProductCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductCategory.m; path = ManagedJastor/Model/ProductCategory.m; sourceTree = "<group>"; };
+		931EF5501666BBAB00D11B32 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Product.h; path = ManagedJastor/Model/Product.h; sourceTree = "<group>"; };
+		931EF5511666BBAB00D11B32 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Product.m; path = ManagedJastor/Model/Product.m; sourceTree = "<group>"; };
+		931EF5541666C02100D11B32 /* Product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Product.json; path = ManagedJastor/Product.json; sourceTree = "<group>"; };
+		931EF5571666C16B00D11B32 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +111,10 @@
 		931EF4E71666B6EB00D11B32 = {
 			isa = PBXGroup;
 			children = (
+				931EF5571666C16B00D11B32 /* README.md */,
+				931EF5541666C02100D11B32 /* Product.json */,
+				931EF5421666B91500D11B32 /* ManagedJastor */,
+				931EF5331666B75500D11B32 /* Model */,
 				931EF4FE1666B6EB00D11B32 /* ManagedJastor */,
 				931EF5201666B6EB00D11B32 /* ManagedJastorTests */,
 				931EF4F51666B6EB00D11B32 /* Frameworks */,
@@ -159,6 +185,29 @@
 				931EF5231666B6EB00D11B32 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		931EF5331666B75500D11B32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				931EF5501666BBAB00D11B32 /* Product.h */,
+				931EF5511666BBAB00D11B32 /* Product.m */,
+				931EF54C1666BB7A00D11B32 /* ProductCategory.h */,
+				931EF54D1666BB7A00D11B32 /* ProductCategory.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		931EF5421666B91500D11B32 /* ManagedJastor */ = {
+			isa = PBXGroup;
+			children = (
+				931EF5441666B91500D11B32 /* ManagedJastor.h */,
+				931EF5451666B91500D11B32 /* ManagedJastor.m */,
+				931EF5461666B91500D11B32 /* ManagedJastorRuntimeHelper.h */,
+				931EF5471666B91500D11B32 /* ManagedJastorRuntimeHelper.m */,
+			);
+			name = ManagedJastor;
+			path = ManagedJastor/ManagedJastor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +285,8 @@
 				931EF50B1666B6EB00D11B32 /* Default.png in Resources */,
 				931EF50D1666B6EB00D11B32 /* Default@2x.png in Resources */,
 				931EF50F1666B6EB00D11B32 /* Default-568h@2x.png in Resources */,
+				931EF5551666C02100D11B32 /* Product.json in Resources */,
+				931EF5581666C16B00D11B32 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +295,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				931EF5251666B6EB00D11B32 /* InfoPlist.strings in Resources */,
+				931EF5561666C02100D11B32 /* Product.json in Resources */,
+				931EF5591666C16B00D11B32 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +326,10 @@
 				931EF5051666B6EB00D11B32 /* main.m in Sources */,
 				931EF5091666B6EB00D11B32 /* AppDelegate.m in Sources */,
 				931EF5121666B6EB00D11B32 /* ManagedJastor.xcdatamodeld in Sources */,
+				931EF5481666B91500D11B32 /* ManagedJastor.m in Sources */,
+				931EF54A1666B91500D11B32 /* ManagedJastorRuntimeHelper.m in Sources */,
+				931EF54E1666BB7A00D11B32 /* ProductCategory.m in Sources */,
+				931EF5521666BBAB00D11B32 /* Product.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +338,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				931EF5281666B6EB00D11B32 /* ManagedJastorTests.m in Sources */,
+				931EF5491666B91500D11B32 /* ManagedJastor.m in Sources */,
+				931EF54B1666B91500D11B32 /* ManagedJastorRuntimeHelper.m in Sources */,
+				931EF54F1666BB7A00D11B32 /* ProductCategory.m in Sources */,
+				931EF5531666BBAB00D11B32 /* Product.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

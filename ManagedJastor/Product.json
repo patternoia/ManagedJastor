@@ -1,0 +1,8 @@
+{
+    "name": "Foo",
+    "categories": [
+        { "name": "Bar Category 1" },
+        { "name": "Bar Category 2" },
+        { "name": "Bar Category 3" }
+   ]
+}
