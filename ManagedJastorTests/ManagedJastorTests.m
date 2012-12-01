@@ -8,6 +8,7 @@
 
 #import "ManagedJastorTests.h"
 #import "Product.h"
+#import "AppDelegate.h"
 
 @implementation ManagedJastorTests
 
@@ -29,21 +30,9 @@
 {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Product" ofType:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:path];
-    
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"ManagedJastor" withExtension:@"momd"];
-    NSManagedObjectModel *managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
-    
-    NSURL *storeURL = [[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject] URLByAppendingPathComponent:@"ManagedJastor.sqlite"];
-    
     NSError *error = nil;
-    NSPersistentStoreCoordinator *persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:managedObjectModel];
-    if (![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
-    }
     
-    NSManagedObjectContext *moc = [[NSManagedObjectContext alloc] init];
-    [moc setPersistentStoreCoordinator:persistentStoreCoordinator];
+    NSManagedObjectContext *moc = ((AppDelegate*) [[UIApplication sharedApplication] delegate]).managedObjectContext;
     
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
     
@@ -54,6 +43,9 @@
     
     STAssertTrue([managedObject.name isEqualToString:@"Foo"], @"Check product name");
     STAssertTrue([[[managedObject.categories anyObject] name] rangeOfString:@"Bar Category"].location != NSNotFound, @"Check object cagegory name");
+    
+    if (![moc save:&error])
+        NSLog(@"Error");
 }
 
 @end
